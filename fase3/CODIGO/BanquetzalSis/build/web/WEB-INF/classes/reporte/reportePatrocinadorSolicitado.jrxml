@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportePatrocinadorSolicitado" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="aed115a8-f21c-4efd-9309-85d29a68538f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT patrocinador.`nombre`, COUNT(productos.`idPatrocinador`) FROM patrocinador INNER JOIN productos ON
+patrocinador.`idPatrocinador`=productos.`idPatrocinador` GROUP BY patrocinador.`nombre` ORDER BY COUNT(productos.`idPatrocinador`) DESC]]>
+	</queryString>
+	<field name="nombre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COUNT(productos.`idPatrocinador`)" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="572" height="20" uuid="b4bf5b06-6787-4960-9466-632d9da1bbb7"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE DE PATROCINADORES MAS SOLICITADOS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="472" y="0" width="100" height="20" uuid="768cd22a-e637-40ad-b27c-432d2f96542b"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="285" height="20" uuid="987a81d8-2c1f-498b-9c0a-7c04510f6a4b"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="2" width="287" height="20" uuid="8fb19c4b-b0bd-4275-ac32-68c83d35afcf"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[cantidad de veces solicitada]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="285" height="20" uuid="2c7f042b-a8f9-417d-b01e-802800255fae"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="0" width="287" height="20" uuid="6305feb1-ae94-4957-9c7b-f81fce38f7a2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COUNT(productos.`idPatrocinador`)}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="472" y="0" width="100" height="20" uuid="c2ab2320-f38d-4654-ba4a-f6a1a4c973b6"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

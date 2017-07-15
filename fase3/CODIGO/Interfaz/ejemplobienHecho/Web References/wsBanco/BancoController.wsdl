@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://WService/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="BancoController" targetNamespace="http://WService/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8081/BanquetzalSis/BancoController?xsd=1" namespace="http://WService/" />
+    </xsd:schema>
+  </types>
+  <message name="eliminarEmpleado">
+    <part name="parameters" element="tns:eliminarEmpleado" />
+  </message>
+  <message name="eliminarEmpleadoResponse">
+    <part name="parameters" element="tns:eliminarEmpleadoResponse" />
+  </message>
+  <message name="validarSesion">
+    <part name="parameters" element="tns:validarSesion" />
+  </message>
+  <message name="validarSesionResponse">
+    <part name="parameters" element="tns:validarSesionResponse" />
+  </message>
+  <message name="busquedaEmpleado">
+    <part name="parameters" element="tns:busquedaEmpleado" />
+  </message>
+  <message name="busquedaEmpleadoResponse">
+    <part name="parameters" element="tns:busquedaEmpleadoResponse" />
+  </message>
+  <message name="rolTipoCuenta">
+    <part name="parameters" element="tns:rolTipoCuenta" />
+  </message>
+  <message name="rolTipoCuentaResponse">
+    <part name="parameters" element="tns:rolTipoCuentaResponse" />
+  </message>
+  <message name="loginEmpleado">
+    <part name="parameters" element="tns:loginEmpleado" />
+  </message>
+  <message name="loginEmpleadoResponse">
+    <part name="parameters" element="tns:loginEmpleadoResponse" />
+  </message>
+  <message name="eliminarCliente">
+    <part name="parameters" element="tns:eliminarCliente" />
+  </message>
+  <message name="eliminarClienteResponse">
+    <part name="parameters" element="tns:eliminarClienteResponse" />
+  </message>
+  <message name="CuentaBancaria">
+    <part name="parameters" element="tns:CuentaBancaria" />
+  </message>
+  <message name="CuentaBancariaResponse">
+    <part name="parameters" element="tns:CuentaBancariaResponse" />
+  </message>
+  <message name="validar">
+    <part name="parameters" element="tns:validar" />
+  </message>
+  <message name="validarResponse">
+    <part name="parameters" element="tns:validarResponse" />
+  </message>
+  <message name="registrarCheque">
+    <part name="parameters" element="tns:registrarCheque" />
+  </message>
+  <message name="registrarChequeResponse">
+    <part name="parameters" element="tns:registrarChequeResponse" />
+  </message>
+  <message name="eliminarCheque">
+    <part name="parameters" element="tns:eliminarCheque" />
+  </message>
+  <message name="eliminarChequeResponse">
+    <part name="parameters" element="tns:eliminarChequeResponse" />
+  </message>
+  <message name="eliminarAgencia">
+    <part name="parameters" element="tns:eliminarAgencia" />
+  </message>
+  <message name="eliminarAgenciaResponse">
+    <part name="parameters" element="tns:eliminarAgenciaResponse" />
+  </message>
+  <message name="modificarCheque">
+    <part name="parameters" element="tns:modificarCheque" />
+  </message>
+  <message name="modificarChequeResponse">
+    <part name="parameters" element="tns:modificarChequeResponse" />
+  </message>
+  <message name="reporteDeposito">
+    <part name="parameters" element="tns:reporteDeposito" />
+  </message>
+  <message name="reporteDepositoResponse">
+    <part name="parameters" element="tns:reporteDepositoResponse" />
+  </message>
+  <message name="eliminarPrestamo">
+    <part name="parameters" element="tns:eliminarPrestamo" />
+  </message>
+  <message name="eliminarPrestamoResponse">
+    <part name="parameters" element="tns:eliminarPrestamoResponse" />
+  </message>
+  <message name="reporteproducto">
+    <part name="parameters" element="tns:reporteproducto" />
+  </message>
+  <message name="reporteproductoResponse">
+    <part name="parameters" element="tns:reporteproductoResponse" />
+  </message>
+  <message name="modificarAgencia">
+    <part name="parameters" element="tns:modificarAgencia" />
+  </message>
+  <message name="modificarAgenciaResponse">
+    <part name="parameters" element="tns:modificarAgenciaResponse" />
+  </message>
+  <message name="reportePrestamo">
+    <part name="parameters" element="tns:reportePrestamo" />
+  </message>
+  <message name="reportePrestamoResponse">
+    <part name="parameters" element="tns:reportePrestamoResponse" />
+  </message>
+  <message name="buscarDeposito">
+    <part name="parameters" element="tns:buscarDeposito" />
+  </message>
+  <message name="buscarDepositoResponse">
+    <part name="parameters" element="tns:buscarDepositoResponse" />
+  </message>
+  <message name="buscarCheque">
+    <part name="parameters" element="tns:buscarCheque" />
+  </message>
+  <message name="buscarChequeResponse">
+    <part name="parameters" element="tns:buscarChequeResponse" />
+  </message>
+  <message name="buscarAgencia">
+    <part name="parameters" element="tns:buscarAgencia" />
+  </message>
+  <message name="buscarAgenciaResponse">
+    <part name="parameters" element="tns:buscarAgenciaResponse" />
+  </message>
+  <message name="registrarAgencia">
+    <part name="parameters" element="tns:registrarAgencia" />
+  </message>
+  <message name="registrarAgenciaResponse">
+    <part name="parameters" element="tns:registrarAgenciaResponse" />
+  </message>
+  <message name="buscarProducto">
+    <part name="parameters" element="tns:buscarProducto" />
+  </message>
+  <message name="buscarProductoResponse">
+    <part name="parameters" element="tns:buscarProductoResponse" />
+  </message>
+  <message name="buscarPrestamos">
+    <part name="parameters" element="tns:buscarPrestamos" />
+  </message>
+  <message name="buscarPrestamosResponse">
+    <part name="parameters" element="tns:buscarPrestamosResponse" />
+  </message>
+  <message name="eliminarDeposito">
+    <part name="parameters" element="tns:eliminarDeposito" />
+  </message>
+  <message name="eliminarDepositoResponse">
+    <part name="parameters" element="tns:eliminarDepositoResponse" />
+  </message>
+  <message name="busquedaClienteindividual">
+    <part name="parameters" element="tns:busquedaClienteindividual" />
+  </message>
+  <message name="busquedaClienteindividualResponse">
+    <part name="parameters" element="tns:busquedaClienteindividualResponse" />
+  </message>
+  <message name="modificarCindividual">
+    <part name="parameters" element="tns:modificarCindividual" />
+  </message>
+  <message name="modificarCindividualResponse">
+    <part name="parameters" element="tns:modificarCindividualResponse" />
+  </message>
+  <message name="registrarClienteEmpresa">
+    <part name="parameters" element="tns:registrarClienteEmpresa" />
+  </message>
+  <message name="registrarClienteEmpresaResponse">
+    <part name="parameters" element="tns:registrarClienteEmpresaResponse" />
+  </message>
+  <message name="modificarEmpleado">
+    <part name="parameters" element="tns:modificarEmpleado" />
+  </message>
+  <message name="modificarEmpleadoResponse">
+    <part name="parameters" element="tns:modificarEmpleadoResponse" />
+  </message>
+  <message name="registrarClienteindividual">
+    <part name="parameters" element="tns:registrarClienteindividual" />
+  </message>
+  <message name="registrarClienteindividualResponse">
+    <part name="parameters" element="tns:registrarClienteindividualResponse" />
+  </message>
+  <message name="registrarEmpleado">
+    <part name="parameters" element="tns:registrarEmpleado" />
+  </message>
+  <message name="registrarEmpleadoResponse">
+    <part name="parameters" element="tns:registrarEmpleadoResponse" />
+  </message>
+  <message name="buscarOrdenProducto">
+    <part name="parameters" element="tns:buscarOrdenProducto" />
+  </message>
+  <message name="buscarOrdenProductoResponse">
+    <part name="parameters" element="tns:buscarOrdenProductoResponse" />
+  </message>
+  <message name="buscarCuentaBancaria">
+    <part name="parameters" element="tns:buscarCuentaBancaria" />
+  </message>
+  <message name="buscarCuentaBancariaResponse">
+    <part name="parameters" element="tns:buscarCuentaBancariaResponse" />
+  </message>
+  <message name="registrarProducto">
+    <part name="parameters" element="tns:registrarProducto" />
+  </message>
+  <message name="registrarProductoResponse">
+    <part name="parameters" element="tns:registrarProductoResponse" />
+  </message>
+  <message name="registrarDeposito">
+    <part name="parameters" element="tns:registrarDeposito" />
+  </message>
+  <message name="registrarDepositoResponse">
+    <part name="parameters" element="tns:registrarDepositoResponse" />
+  </message>
+  <message name="buscarPatrocinador">
+    <part name="parameters" element="tns:buscarPatrocinador" />
+  </message>
+  <message name="buscarPatrocinadorResponse">
+    <part name="parameters" element="tns:buscarPatrocinadorResponse" />
+  </message>
+  <message name="registrarOrdenProducto">
+    <part name="parameters" element="tns:registrarOrdenProducto" />
+  </message>
+  <message name="registrarOrdenProductoResponse">
+    <part name="parameters" element="tns:registrarOrdenProductoResponse" />
+  </message>
+  <message name="eliminarCuentaBancaria">
+    <part name="parameters" element="tns:eliminarCuentaBancaria" />
+  </message>
+  <message name="eliminarCuentaBancariaResponse">
+    <part name="parameters" element="tns:eliminarCuentaBancariaResponse" />
+  </message>
+  <message name="registrarPrestamo">
+    <part name="parameters" element="tns:registrarPrestamo" />
+  </message>
+  <message name="registrarPrestamoResponse">
+    <part name="parameters" element="tns:registrarPrestamoResponse" />
+  </message>
+  <message name="reportePatrocinador">
+    <part name="parameters" element="tns:reportePatrocinador" />
+  </message>
+  <message name="reportePatrocinadorResponse">
+    <part name="parameters" element="tns:reportePatrocinadorResponse" />
+  </message>
+  <message name="registrarProveedor">
+    <part name="parameters" element="tns:registrarProveedor" />
+  </message>
+  <message name="registrarProveedorResponse">
+    <part name="parameters" element="tns:registrarProveedorResponse" />
+  </message>
+  <message name="modificarCuentaBancaria">
+    <part name="parameters" element="tns:modificarCuentaBancaria" />
+  </message>
+  <message name="modificarCuentaBancariaResponse">
+    <part name="parameters" element="tns:modificarCuentaBancariaResponse" />
+  </message>
+  <portType name="BancoController">
+    <operation name="eliminarEmpleado">
+      <input wsam:Action="http://WService/BancoController/eliminarEmpleadoRequest" message="tns:eliminarEmpleado" />
+      <output wsam:Action="http://WService/BancoController/eliminarEmpleadoResponse" message="tns:eliminarEmpleadoResponse" />
+    </operation>
+    <operation name="validarSesion">
+      <input wsam:Action="http://WService/BancoController/validarSesionRequest" message="tns:validarSesion" />
+      <output wsam:Action="http://WService/BancoController/validarSesionResponse" message="tns:validarSesionResponse" />
+    </operation>
+    <operation name="busquedaEmpleado">
+      <input wsam:Action="http://WService/BancoController/busquedaEmpleadoRequest" message="tns:busquedaEmpleado" />
+      <output wsam:Action="http://WService/BancoController/busquedaEmpleadoResponse" message="tns:busquedaEmpleadoResponse" />
+    </operation>
+    <operation name="rolTipoCuenta">
+      <input wsam:Action="http://WService/BancoController/rolTipoCuentaRequest" message="tns:rolTipoCuenta" />
+      <output wsam:Action="http://WService/BancoController/rolTipoCuentaResponse" message="tns:rolTipoCuentaResponse" />
+    </operation>
+    <operation name="loginEmpleado">
+      <input wsam:Action="http://WService/BancoController/loginEmpleadoRequest" message="tns:loginEmpleado" />
+      <output wsam:Action="http://WService/BancoController/loginEmpleadoResponse" message="tns:loginEmpleadoResponse" />
+    </operation>
+    <operation name="eliminarCliente">
+      <input wsam:Action="http://WService/BancoController/eliminarClienteRequest" message="tns:eliminarCliente" />
+      <output wsam:Action="http://WService/BancoController/eliminarClienteResponse" message="tns:eliminarClienteResponse" />
+    </operation>
+    <operation name="CuentaBancaria">
+      <input wsam:Action="http://WService/BancoController/CuentaBancariaRequest" message="tns:CuentaBancaria" />
+      <output wsam:Action="http://WService/BancoController/CuentaBancariaResponse" message="tns:CuentaBancariaResponse" />
+    </operation>
+    <operation name="validar">
+      <input wsam:Action="http://WService/BancoController/validarRequest" message="tns:validar" />
+      <output wsam:Action="http://WService/BancoController/validarResponse" message="tns:validarResponse" />
+    </operation>
+    <operation name="registrarCheque">
+      <input wsam:Action="http://WService/BancoController/registrarChequeRequest" message="tns:registrarCheque" />
+      <output wsam:Action="http://WService/BancoController/registrarChequeResponse" message="tns:registrarChequeResponse" />
+    </operation>
+    <operation name="eliminarCheque">
+      <input wsam:Action="http://WService/BancoController/eliminarChequeRequest" message="tns:eliminarCheque" />
+      <output wsam:Action="http://WService/BancoController/eliminarChequeResponse" message="tns:eliminarChequeResponse" />
+    </operation>
+    <operation name="eliminarAgencia">
+      <input wsam:Action="http://WService/BancoController/eliminarAgenciaRequest" message="tns:eliminarAgencia" />
+      <output wsam:Action="http://WService/BancoController/eliminarAgenciaResponse" message="tns:eliminarAgenciaResponse" />
+    </operation>
+    <operation name="modificarCheque">
+      <input wsam:Action="http://WService/BancoController/modificarChequeRequest" message="tns:modificarCheque" />
+      <output wsam:Action="http://WService/BancoController/modificarChequeResponse" message="tns:modificarChequeResponse" />
+    </operation>
+    <operation name="reporteDeposito">
+      <input wsam:Action="http://WService/BancoController/reporteDepositoRequest" message="tns:reporteDeposito" />
+      <output wsam:Action="http://WService/BancoController/reporteDepositoResponse" message="tns:reporteDepositoResponse" />
+    </operation>
+    <operation name="eliminarPrestamo">
+      <input wsam:Action="http://WService/BancoController/eliminarPrestamoRequest" message="tns:eliminarPrestamo" />
+      <output wsam:Action="http://WService/BancoController/eliminarPrestamoResponse" message="tns:eliminarPrestamoResponse" />
+    </operation>
+    <operation name="reporteproducto">
+      <input wsam:Action="http://WService/BancoController/reporteproductoRequest" message="tns:reporteproducto" />
+      <output wsam:Action="http://WService/BancoController/reporteproductoResponse" message="tns:reporteproductoResponse" />
+    </operation>
+    <operation name="modificarAgencia">
+      <input wsam:Action="http://WService/BancoController/modificarAgenciaRequest" message="tns:modificarAgencia" />
+      <output wsam:Action="http://WService/BancoController/modificarAgenciaResponse" message="tns:modificarAgenciaResponse" />
+    </operation>
+    <operation name="reportePrestamo">
+      <input wsam:Action="http://WService/BancoController/reportePrestamoRequest" message="tns:reportePrestamo" />
+      <output wsam:Action="http://WService/BancoController/reportePrestamoResponse" message="tns:reportePrestamoResponse" />
+    </operation>
+    <operation name="buscarDeposito">
+      <input wsam:Action="http://WService/BancoController/buscarDepositoRequest" message="tns:buscarDeposito" />
+      <output wsam:Action="http://WService/BancoController/buscarDepositoResponse" message="tns:buscarDepositoResponse" />
+    </operation>
+    <operation name="buscarCheque">
+      <input wsam:Action="http://WService/BancoController/buscarChequeRequest" message="tns:buscarCheque" />
+      <output wsam:Action="http://WService/BancoController/buscarChequeResponse" message="tns:buscarChequeResponse" />
+    </operation>
+    <operation name="buscarAgencia">
+      <input wsam:Action="http://WService/BancoController/buscarAgenciaRequest" message="tns:buscarAgencia" />
+      <output wsam:Action="http://WService/BancoController/buscarAgenciaResponse" message="tns:buscarAgenciaResponse" />
+    </operation>
+    <operation name="registrarAgencia">
+      <input wsam:Action="http://WService/BancoController/registrarAgenciaRequest" message="tns:registrarAgencia" />
+      <output wsam:Action="http://WService/BancoController/registrarAgenciaResponse" message="tns:registrarAgenciaResponse" />
+    </operation>
+    <operation name="buscarProducto">
+      <input wsam:Action="http://WService/BancoController/buscarProductoRequest" message="tns:buscarProducto" />
+      <output wsam:Action="http://WService/BancoController/buscarProductoResponse" message="tns:buscarProductoResponse" />
+    </operation>
+    <operation name="buscarPrestamos">
+      <input wsam:Action="http://WService/BancoController/buscarPrestamosRequest" message="tns:buscarPrestamos" />
+      <output wsam:Action="http://WService/BancoController/buscarPrestamosResponse" message="tns:buscarPrestamosResponse" />
+    </operation>
+    <operation name="eliminarDeposito">
+      <input wsam:Action="http://WService/BancoController/eliminarDepositoRequest" message="tns:eliminarDeposito" />
+      <output wsam:Action="http://WService/BancoController/eliminarDepositoResponse" message="tns:eliminarDepositoResponse" />
+    </operation>
+    <operation name="busquedaClienteindividual">
+      <input wsam:Action="http://WService/BancoController/busquedaClienteindividualRequest" message="tns:busquedaClienteindividual" />
+      <output wsam:Action="http://WService/BancoController/busquedaClienteindividualResponse" message="tns:busquedaClienteindividualResponse" />
+    </operation>
+    <operation name="modificarCindividual">
+      <input wsam:Action="http://WService/BancoController/modificarCindividualRequest" message="tns:modificarCindividual" />
+      <output wsam:Action="http://WService/BancoController/modificarCindividualResponse" message="tns:modificarCindividualResponse" />
+    </operation>
+    <operation name="registrarClienteEmpresa">
+      <input wsam:Action="http://WService/BancoController/registrarClienteEmpresaRequest" message="tns:registrarClienteEmpresa" />
+      <output wsam:Action="http://WService/BancoController/registrarClienteEmpresaResponse" message="tns:registrarClienteEmpresaResponse" />
+    </operation>
+    <operation name="modificarEmpleado">
+      <input wsam:Action="http://WService/BancoController/modificarEmpleadoRequest" message="tns:modificarEmpleado" />
+      <output wsam:Action="http://WService/BancoController/modificarEmpleadoResponse" message="tns:modificarEmpleadoResponse" />
+    </operation>
+    <operation name="registrarClienteindividual">
+      <input wsam:Action="http://WService/BancoController/registrarClienteindividualRequest" message="tns:registrarClienteindividual" />
+      <output wsam:Action="http://WService/BancoController/registrarClienteindividualResponse" message="tns:registrarClienteindividualResponse" />
+    </operation>
+    <operation name="registrarEmpleado">
+      <input wsam:Action="http://WService/BancoController/registrarEmpleadoRequest" message="tns:registrarEmpleado" />
+      <output wsam:Action="http://WService/BancoController/registrarEmpleadoResponse" message="tns:registrarEmpleadoResponse" />
+    </operation>
+    <operation name="buscarOrdenProducto">
+      <input wsam:Action="http://WService/BancoController/buscarOrdenProductoRequest" message="tns:buscarOrdenProducto" />
+      <output wsam:Action="http://WService/BancoController/buscarOrdenProductoResponse" message="tns:buscarOrdenProductoResponse" />
+    </operation>
+    <operation name="buscarCuentaBancaria">
+      <input wsam:Action="http://WService/BancoController/buscarCuentaBancariaRequest" message="tns:buscarCuentaBancaria" />
+      <output wsam:Action="http://WService/BancoController/buscarCuentaBancariaResponse" message="tns:buscarCuentaBancariaResponse" />
+    </operation>
+    <operation name="registrarProducto">
+      <input wsam:Action="http://WService/BancoController/registrarProductoRequest" message="tns:registrarProducto" />
+      <output wsam:Action="http://WService/BancoController/registrarProductoResponse" message="tns:registrarProductoResponse" />
+    </operation>
+    <operation name="registrarDeposito">
+      <input wsam:Action="http://WService/BancoController/registrarDepositoRequest" message="tns:registrarDeposito" />
+      <output wsam:Action="http://WService/BancoController/registrarDepositoResponse" message="tns:registrarDepositoResponse" />
+    </operation>
+    <operation name="buscarPatrocinador">
+      <input wsam:Action="http://WService/BancoController/buscarPatrocinadorRequest" message="tns:buscarPatrocinador" />
+      <output wsam:Action="http://WService/BancoController/buscarPatrocinadorResponse" message="tns:buscarPatrocinadorResponse" />
+    </operation>
+    <operation name="registrarOrdenProducto">
+      <input wsam:Action="http://WService/BancoController/registrarOrdenProductoRequest" message="tns:registrarOrdenProducto" />
+      <output wsam:Action="http://WService/BancoController/registrarOrdenProductoResponse" message="tns:registrarOrdenProductoResponse" />
+    </operation>
+    <operation name="eliminarCuentaBancaria">
+      <input wsam:Action="http://WService/BancoController/eliminarCuentaBancariaRequest" message="tns:eliminarCuentaBancaria" />
+      <output wsam:Action="http://WService/BancoController/eliminarCuentaBancariaResponse" message="tns:eliminarCuentaBancariaResponse" />
+    </operation>
+    <operation name="registrarPrestamo">
+      <input wsam:Action="http://WService/BancoController/registrarPrestamoRequest" message="tns:registrarPrestamo" />
+      <output wsam:Action="http://WService/BancoController/registrarPrestamoResponse" message="tns:registrarPrestamoResponse" />
+    </operation>
+    <operation name="reportePatrocinador">
+      <input wsam:Action="http://WService/BancoController/reportePatrocinadorRequest" message="tns:reportePatrocinador" />
+      <output wsam:Action="http://WService/BancoController/reportePatrocinadorResponse" message="tns:reportePatrocinadorResponse" />
+    </operation>
+    <operation name="registrarProveedor">
+      <input wsam:Action="http://WService/BancoController/registrarProveedorRequest" message="tns:registrarProveedor" />
+      <output wsam:Action="http://WService/BancoController/registrarProveedorResponse" message="tns:registrarProveedorResponse" />
+    </operation>
+    <operation name="modificarCuentaBancaria">
+      <input wsam:Action="http://WService/BancoController/modificarCuentaBancariaRequest" message="tns:modificarCuentaBancaria" />
+      <output wsam:Action="http://WService/BancoController/modificarCuentaBancariaResponse" message="tns:modificarCuentaBancariaResponse" />
+    </operation>
+  </portType>
+  <binding name="BancoControllerPortBinding" type="tns:BancoController">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="eliminarEmpleado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="validarSesion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="busquedaEmpleado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="rolTipoCuenta">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="loginEmpleado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarCliente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CuentaBancaria">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="validar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarCheque">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarCheque">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarAgencia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarCheque">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="reporteDeposito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarPrestamo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="reporteproducto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarAgencia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="reportePrestamo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarDeposito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarCheque">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarAgencia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarAgencia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarProducto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarPrestamos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarDeposito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="busquedaClienteindividual">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarCindividual">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarClienteEmpresa">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarEmpleado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarClienteindividual">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarEmpleado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarOrdenProducto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarCuentaBancaria">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarProducto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarDeposito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarPatrocinador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarOrdenProducto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarCuentaBancaria">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarPrestamo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="reportePatrocinador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarProveedor">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarCuentaBancaria">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="BancoController">
+    <port name="BancoControllerPort" binding="tns:BancoControllerPortBinding">
+      <soap:address location="http://localhost:8081/BanquetzalSis/BancoController" />
+    </port>
+  </service>
+</definitions>

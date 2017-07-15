@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporteDeposito" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="68751408-ec54-43ba-a9c8-1911b231eb64">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="_numeroCuenta" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\Yovany Samines\\Documents\\NetBeansProjects\\BanquetzalSis\\src\\java\\reporte\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="fechaInicio" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="fechaFinal" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT cuentabancaria.numeroCuenta,clienteindividual.`nombres`, clienteindividual.`apellidos`,deposito.`deposita`,deposito.`numeroCui`,deposito.`fecha`
+FROM cuentabancaria INNER JOIN clienteindividual ON cuentabancaria.`numeroCui`=clienteindividual.`numeroCui`
+INNER JOIN deposito ON cuentabancaria.`numeroCui`=deposito.`numeroCui`
+ WHERE cuentabancaria.`numeroCuenta`=$P{_numeroCuenta} AND  deposito.`fecha` BETWEEN $P{fechaInicio} AND $P{fechaFinal}]]>
+	</queryString>
+	<field name="numeroCuenta" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombres" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellidos" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="deposita" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numeroCui" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fecha" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="572" height="20" uuid="f207da8f-2e75-41c6-9858-0371bd3af8d4"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte de Depoisito]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="87" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="59" height="20" uuid="b2e55085-5e1b-4b2b-9377-6b4e7468e06d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombres:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="100" height="20" uuid="ac5c5af7-b039-4f4c-bae2-c6f8043f9e13"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Numero de Cuenta: ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="44" y="21" width="528" height="2" uuid="b9b829f6-cca7-4397-91fc-3ef76a2d0072"/>
+			</line>
+			<textField>
+				<reportElement x="59" y="1" width="513" height="20" uuid="b65a951e-1052-433c-9934-8a0592f6b3ac"/>
+				<textFieldExpression><![CDATA[$F{nombres}.trim()+" "+$F{apellidos}.trim()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="30" width="100" height="20" uuid="9283d356-ae5a-4b19-afe6-b0e6b60f2331"/>
+				<textFieldExpression><![CDATA[$F{numeroCuenta}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="88" y="50" width="484" height="1" uuid="9eed4494-053c-42b2-b964-39991ee18da0"/>
+			</line>
+			<staticText>
+				<reportElement x="76" y="67" width="172" height="20" uuid="1d9b0ac6-a016-4a34-9de0-433e6c7beb78"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[deposita]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="67" width="125" height="20" uuid="9ee39529-4a8d-43db-8eff-f978227b1c3f"/>
+				<text><![CDATA[numeroCui]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="67" width="100" height="20" uuid="e0113012-1076-48e1-84d0-ce0743ef1d3a"/>
+				<text><![CDATA[fecha]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement x="88" y="0" width="160" height="20" uuid="9c1b7ea1-1c0e-47ce-83ed-a21793afc876"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{deposita}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="248" y="0" width="125" height="20" uuid="550cb642-e23b-463c-bade-895b43c18413"/>
+				<textFieldExpression><![CDATA[$F{numeroCui}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="373" y="0" width="100" height="20" uuid="d0baf9f0-fe2c-49e2-8edb-f5b1db055f2b"/>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

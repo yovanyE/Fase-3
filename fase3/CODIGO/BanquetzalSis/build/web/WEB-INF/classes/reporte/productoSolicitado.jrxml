@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="productoSolicitado" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b958ca89-dd91-4655-9f8e-a1265ff78fb9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[
+SELECT productos.`nombre`,COUNT(ordenProducto.`idProductos`) FROM productos INNER JOIN ordenProducto ON
+productos.`idPatrocinador`=ordenProducto.`idProductos` GROUP BY productos.`nombre` ORDER BY COUNT(ordenProducto.`idProductos`) DESC]]>
+	</queryString>
+	<field name="nombre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COUNT(ordenProducto.`idProductos`)" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="572" height="20" uuid="93edbd39-c17a-4e55-b991-ec743a30b710"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRODUCTOS MAS SOLICITADOS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="472" y="0" width="100" height="20" uuid="0c674ef0-3949-4737-a95f-6c6bd1ee3d97"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="263" height="20" uuid="355e198d-0d1f-40de-9f50-8762ceee7198"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="263" y="0" width="309" height="20" uuid="33cdcf76-080d-4d6b-aa6b-c920becaeb08"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Cantidad de Veces solicitada]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="263" height="20" uuid="97dcc6e0-9b4c-489b-a852-54053a9b935c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="263" y="0" width="309" height="20" uuid="b32ba97e-7a6a-4fce-b383-46673ec2db1a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COUNT(ordenProducto.`idProductos`)}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="472" y="34" width="100" height="20" uuid="3a85e5e4-c67d-45f9-9977-5b39875acb27"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

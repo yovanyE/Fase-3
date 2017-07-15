@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportePrestamo" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8d5f1c86-a09a-4134-a9fe-b11c9512dab9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT prestamo.`cantidadDinero`,prestamo.`numeroCui`,modalidad.`descripcion`FROM prestamo INNER JOIN modalidad ON prestamo.`idmodalidad`=modalidad.`idmodalidad`]]>
+	</queryString>
+	<field name="cantidadDinero" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numeroCui" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descripcion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="89" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="572" height="40" uuid="dc7392f3-5eea-41a8-8664-d324c1dfb53f"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte de prestamos]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="171" height="20" uuid="a7491a01-7221-4278-94a1-2d52dea91401"/>
+				<text><![CDATA[cantidadDinero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="171" y="0" width="262" height="20" uuid="7aded4f4-9838-4171-a3cd-bd60df4e0836"/>
+				<text><![CDATA[numeroCui]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="433" y="0" width="139" height="20" uuid="ca707897-8d43-44cc-9cd7-327e5fb9cf23"/>
+				<text><![CDATA[descripcion]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="171" height="20" uuid="97857640-7d79-40b6-bd29-f1369c9662c7"/>
+				<textFieldExpression><![CDATA[$F{cantidadDinero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="0" width="262" height="20" uuid="366a6e64-0ba1-400a-b17f-ff15670cc560"/>
+				<textFieldExpression><![CDATA[$F{numeroCui}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="433" y="0" width="139" height="20" uuid="bbcaf29e-0b79-477d-b8ca-cef778c122e2"/>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

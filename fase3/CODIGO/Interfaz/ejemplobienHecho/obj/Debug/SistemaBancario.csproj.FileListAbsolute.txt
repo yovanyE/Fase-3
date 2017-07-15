@@ -1,0 +1,60 @@
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\roslyn\csc.exe
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\roslyn\vbc.exe
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\roslyn\VBCSCompiler.exe
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\ejemplobienHecho.dll.config
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\ejemplobienHecho.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\ejemplobienHecho.pdb
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\obj\Debug\SistemaBancario.csprojResolveAssemblyReference.cache
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\obj\Debug\ejemplobienHecho.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\Interfaz\ejemplobienHecho\obj\Debug\ejemplobienHecho.pdb
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\csc.exe
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\vbc.exe
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\VBCSCompiler.exe
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\ejemplobienHecho.dll.config
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\ejemplobienHecho.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\ejemplobienHecho.pdb
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\obj\Debug\SistemaBancario.csprojResolveAssemblyReference.cache
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\obj\Debug\ejemplobienHecho.dll
+C:\Users\Yovany Samines\Documents\YOVANY ENRIQUE SAMINES OROZCO\documentostudio\USAC\IPC2\vacaciones\FASE2\CODIGO\Interfaz\ejemplobienHecho\obj\Debug\ejemplobienHecho.pdb
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\csc.exe
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\vbc.exe
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\VBCSCompiler.exe
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\ejemplobienHecho.dll.config
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\ejemplobienHecho.dll
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\ejemplobienHecho.pdb
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\obj\Debug\SistemaBancario.csprojResolveAssemblyReference.cache
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\obj\Debug\ejemplobienHecho.dll
+C:\Users\Yovany Samines\Desktop\Final\CODIGO\Interfaz\ejemplobienHecho\obj\Debug\ejemplobienHecho.pdb
